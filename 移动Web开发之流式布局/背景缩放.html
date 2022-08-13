@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 230px;
+            border: 1px solid orangered;
+            background: url(images/dog.jpg) no-repeat;
+            /* 相对父盒子 */
+            background-size: 50% 50%;
+            /* 自定义高度和宽度 */
+            background-size: 500px 230px;
+            /* 完全覆盖 可能部分背景图片显示不全 */
+            background-size: cover;
+            /* 等比例缩放，一边满 */
+            background-size: contain;
+        }
+
+        div:nth-child(2) {
+            width: 50px;
+            height: 50px;
+            background: url(images/apple100.jpg);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
